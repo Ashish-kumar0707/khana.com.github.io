@@ -1,0 +1,255 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+    scroll-padding-block-start: 175px;
+
+}
+
+/* navbar css */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    justify-content: space-between;
+    position: sticky;
+    inset-block-start: 0px;
+
+
+}
+
+#logo img {
+    height: 33px;
+    margin: 3px 6px;
+    border-radius: 50%;
+    width: 33px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5rem;
+    flex-basis: 90%;
+
+}
+
+#navbar ul li {
+    flex-basis: 100%;
+    text-align: center;
+
+}
+
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./img-1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: black;
+
+
+}
+
+#home p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+/* Services Section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 160px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+/* client section  */
+
+#client-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+    height: auto;
+
+}
+
+#clients img {
+    height: 147px;
+    width: 147px;
+    border-radius: 50%;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('./img-5.jpg') no-repeat center center/cover;
+    height: 269px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* contact section  */
+#contact {
+    position: relative;
+    margin-top: 3px;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('./contact.jpg') no-repeat center center/cover;
+    height: 433px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* footer  */
+footer {
+    margin-top: -11px;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* utility classes */
+
+.h-primary {
+    font-family: 'Padauk', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
