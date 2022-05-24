@@ -11,7 +11,7 @@
 #navbar {
     display: flex;
     align-items: center;
-    background-color: rgb(191, 12, 12);
+    /* background-color: rgb(191, 12, 12); */
     justify-content: space-between;
     position: sticky;
     inset-block-start: 0px;
